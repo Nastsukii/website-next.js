@@ -1,0 +1,24 @@
+{
+  "linkTree": [
+    {
+      "href": "https://wa.me/5545999999999",
+      "label": "WhatsApp",
+      "icon": "FaWhatsapp"
+    },
+    {
+      "href": "https://www.instagram.com/vivielicomiran/",
+      "label": "Instagram",
+      "icon": "FaInstagram"
+    },
+    {
+      "href": "mailto:contato@vivielicomiran.com",
+      "label": "E-mail",
+      "icon": "FaEnvelope"
+    },
+    {
+      "href": "tel:+5545999999999",
+      "label": "Telefone",
+      "icon": "FaPhone"
+    }
+  ]
+}

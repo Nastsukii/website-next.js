@@ -1,0 +1,12 @@
+{
+  "gitRepo": "vivieli-terapeuta",
+  "nextVersion": "1.0.0",
+  "message": "Site inicial para terapeuta Vivieli Comiran",
+  "update": false,
+  "gitEmail": "contato@vivielicomiran.com",
+  "beta": false,
+  "version": "1.0.0",
+  "gitUser": "vivieli-comiran",
+  "automaticUpdates": false,
+  "customNextSource": ""
+}

@@ -1,0 +1,25 @@
+{
+  "mainMenu": [
+    {
+      "label": "Início",
+      "href": "/"
+    },
+    {
+      "label": "Sobre",
+      "href": "/sobre"
+    },
+    {
+      "label": "Serviços",
+      "href": "/servicos"
+    },
+    {
+      "label": "Blog",
+      "href": "/posts"
+    },
+    {
+      "label": "Contato",
+      "href": "/contato"
+    }
+  ]
+}
+
