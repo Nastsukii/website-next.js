@@ -21,10 +21,10 @@
     "headerMainMenuType": "category"
   },
   "themeColors": {
-    "brand_color": "#8B5CF6",
-    "ctaColor": "#8B5CF6",
+    "brand_color": "#059669",
+    "ctaColor": "#059669",
     "background_color": "#ffffff",
-    "darkBrandColor": "#A78BFA",
+    "darkBrandColor": "#34D399",
     "secondaryColor": "#1F2937",
     "darkBackgroundColor": "#111827"
   },
@@ -32,3 +32,4 @@
     "themeStyle": "0"
   }
 }
+
