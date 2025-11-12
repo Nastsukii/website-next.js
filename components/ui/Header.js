@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useTheme } from 'next-themes';
 import { FaSun, FaMoon, FaBars, FaTimes } from 'react-icons/fa';
@@ -17,6 +17,9 @@ export default function Header({
 }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => setMounted(true), []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -79,12 +82,13 @@ export default function Header({
               onClick={toggleTheme}
               className="p-2 rounded-md text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
               aria-label="Toggle theme"
+              suppressHydrationWarning
             >
-              {theme === 'dark' ? (
-                <FaSun className="h-5 w-5" />
-              ) : (
-                <FaMoon className="h-5 w-5" />
-              )}
+              {/* Renderizamos ambos ícones e controlamos a visibilidade por classes para evitar mismatch SSR/CSR */}
+              <span className="inline-block">
+                <FaMoon className="h-5 w-5 block dark:hidden" />
+                <FaSun className="h-5 w-5 hidden dark:block" />
+              </span>
             </button>
 
             {showMainMenu && (

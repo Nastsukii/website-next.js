@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --background: #F0FDF4; /* green-50 para fundo mais claro no modo claro */
+  --background: #ffffff; /* fundo claro conforme theme.json */
   --foreground: #171717;
-  --brand-color: #059669;
+  --brand-color: #059669; /* emerald-600 (brand) */
   --cta-color: #059669;
   --secondary-color: #1f2937;
 }
@@ -20,9 +20,9 @@
 }
 
 .dark {
-  --background: #111827;
+  --background: #111827; /* dark background do theme.json */
   --foreground: #f9fafb;
-  --brand-color: #34D399;
+  --brand-color: #34D399; /* emerald-400 (brand dark) */
   --secondary-color: #1f2937;
 }
 
@@ -162,3 +162,99 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease,
     border-color 0.3s ease;
 }
+
+/* ========================= */
+/* Paleta semântica e utils  */
+/* ========================= */
+
+:root {
+  /* Paleta semântica (modo claro) */
+  --bg: #ffffff;              /* fundo branco conforme theme.json */
+  --surface: #ffffff;          /* branco */
+  --surface-strong: #f8fafc;   /* slate-50 */
+  --card: #ffffff;
+  --border: #e2e8f0;           /* slate-200 */
+  --text: #0f172a;             /* slate-900 */
+  --muted: #475569;            /* slate-600 */
+  --accent: #059669;           /* emerald-600 (brand_color) */
+  --accent-hover: #047857;     /* emerald-700 */
+  --accent-foreground: #ffffff;
+  --accent-soft: rgba(5, 150, 105, 0.12);
+}
+
+.dark {
+  /* Paleta semântica (modo escuro) */
+  --bg: #111827;               /* darkBackgroundColor */
+  --surface: #111827;          /* fundo principal */
+  --surface-strong: #0b1220;   /* tom um pouco mais escuro */
+  --card: #111827;             /* gray-900-ish */
+  --border: #334155;           /* slate-700 */
+  --text: #e5e7eb;             /* gray-200 */
+  --muted: #94a3b8;            /* slate-400 */
+  --accent: #34D399;           /* darkBrandColor */
+  --accent-hover: #10B981;     /* emerald-500 */
+  --accent-foreground: #ffffff; /* texto sobre accent em dark */
+  --accent-soft: rgba(52, 211, 153, 0.12);
+}
+
+/* Base */
+body { background: var(--bg); color: var(--text); }
+
+/* Overrides para .prose usando accent */
+.prose a { color: var(--accent); text-decoration: underline; }
+.prose a:hover { color: var(--accent-hover); }
+.prose blockquote {
+  border-left: 4px solid var(--accent);
+  background: var(--surface);
+}
+
+/* Utilitários semânticos de cor */
+@layer utilities {
+  .bg-app { background-color: var(--bg); }
+  .bg-surface { background-color: var(--surface); }
+  .bg-surface-strong { background-color: var(--surface-strong); }
+  .bg-card { background-color: var(--card); }
+
+  .text-primary { color: var(--text); }
+  .text-muted { color: var(--muted); }
+  .text-accent { color: var(--accent); }
+  .text-on-accent { color: var(--accent-foreground); }
+
+  .border-muted { border-color: var(--border); }
+  .ring-accent { --tw-ring-color: var(--accent); }
+
+  .bg-accent { background-color: var(--accent); }
+  .bg-accent-soft { background-color: var(--accent-soft); }
+  .hover\:bg-accent:hover { background-color: var(--accent-hover); }
+  .hover\:text-accent:hover { color: var(--accent-hover); }
+}
+
+/* Componentes prontos (botões, badges, links) */
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center px-6 py-3 rounded-md font-medium;
+    background-color: var(--accent);
+    color: var(--accent-foreground);
+  }
+  .btn-primary:hover { background-color: var(--accent-hover); }
+  .btn-primary:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .btn-outline {
+    @apply inline-flex items-center px-6 py-3 rounded-md font-medium border;
+    border-color: var(--accent);
+    color: var(--accent);
+    background-color: transparent;
+  }
+  .btn-outline:hover { background-color: var(--accent-soft); }
+
+  .badge-accent {
+    @apply inline-block px-2 py-1 text-xs font-medium rounded-full;
+    color: var(--accent);
+    background-color: var(--accent-soft);
+  }
+
+  .link-accent { color: var(--accent); }
+  .link-accent:hover { color: var(--accent-hover); }
+}
+
+/* (Removidos overrides globais de Tailwind para evitar conflitos visuais) */

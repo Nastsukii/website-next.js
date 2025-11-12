@@ -4,6 +4,7 @@ export default function PageSection({
   isBoxed = true,
   bgImage = '',
   bgColor = 'bg-white dark:bg-gray-900',
+  textColor = '',
   numColumns = 1,
   gap = 'gap-6',
   maxWidth = 'max-w-7xl',
@@ -55,12 +56,20 @@ export default function PageSection({
         {(title || subtitle) && (
           <div className="text-center mb-12">
             {title && (
-              <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+              <h2 className={cn(
+                'text-4xl font-bold mb-4',
+                textColor ? textColor : 'text-gray-900 dark:text-white'
+              )}
+              >
                 {title}
               </h2>
             )}
             {subtitle && (
-              <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              <p className={cn(
+                'text-xl max-w-3xl mx-auto',
+                textColor ? textColor : 'text-gray-600 dark:text-gray-300'
+              )}
+              >
                 {subtitle}
               </p>
             )}
@@ -96,7 +105,13 @@ export default function PageSection({
             {ctaContrastBtnText && (
               <a
                 href={ctaContrastBtnLink}
-                className="inline-flex items-center px-8 py-3 border border-green-600 text-base font-medium rounded-md text-green-600 bg-transparent hover:bg-green-50 dark:hover:bg-green-900 transition-colors duration-200"
+                className={cn(
+                  'inline-flex items-center px-8 py-3 text-base font-medium rounded-md transition-colors duration-200',
+                  /* Se a seção tem fundo verde sólido, use contraste branco */
+                  /bg-green-600/.test(bgColor)
+                    ? 'border border-white text-white hover:bg-white hover:text-green-700'
+                    : 'border border-green-600 text-green-600 bg-transparent hover:bg-green-50 dark:hover:bg-green-900'
+                )}
               >
                 {ctaContrastBtnText}
               </a>
