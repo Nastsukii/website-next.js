@@ -62,6 +62,7 @@ export default function Layout({
           messages={ribbonMessages}
           bgColor="bg-green-600"
           textColor="text-white"
+          pauseOnHover={false}
         />
         
         <Header 

@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { useRouter } from 'next/router';
 import { FaTimes } from 'react-icons/fa';
 
 export default function TopRibbon({
@@ -6,7 +7,7 @@ export default function TopRibbon({
   bgColor = 'bg-green-600',
   textColor = 'text-white',
   speed = 60, // pixels por segundo
-  pauseOnHover = true,
+  pauseOnHover = false,
   showCloseButton = true,
 }) {
   const [isVisible, setIsVisible] = useState(true);
@@ -17,25 +18,34 @@ export default function TopRibbon({
   const lastTsRef = useRef(null);
   const containerRef = useRef(null);
   const contentRef = useRef(null);
+  const offsetRef = useRef(0);
+  const router = useRouter();
 
   // Duplicamos mensagens para efeito contínuo
   const renderMessages = [...messages, ...messages];
 
-  if (!isVisible || messages.length === 0) {
-    return null;
-  }
-
   const handleClose = () => {
+    if (typeof window !== 'undefined') {
+      window.__topRibbonClosed = true;
+    }
+    setPaused(true);
     setIsVisible(false);
   };
 
   useEffect(() => {
     setMounted(true);
+    if (typeof window !== 'undefined' && window.__topRibbonClosed) {
+      setIsVisible(false);
+    }
     const saved = Number(localStorage.getItem('topRibbonOffset') || 0);
     if (!Number.isNaN(saved)) {
       setOffset(saved);
     }
   }, []);
+
+  useEffect(() => {
+    offsetRef.current = offset;
+  }, [offset]);
 
   useEffect(() => {
     if (!mounted) return;
@@ -69,10 +79,15 @@ export default function TopRibbon({
       lastTsRef.current = null;
     };
     document.addEventListener('visibilitychange', onVisibility);
+    const onRouteChangeStart = () => {
+      localStorage.setItem('topRibbonOffset', String(offsetRef.current));
+    };
+    router.events?.on('routeChangeStart', onRouteChangeStart);
     return () => {
       if (rafRef.current) cancelAnimationFrame(rafRef.current);
       document.removeEventListener('visibilitychange', onVisibility);
-      localStorage.setItem('topRibbonOffset', String(offset));
+      router.events?.off('routeChangeStart', onRouteChangeStart);
+      localStorage.setItem('topRibbonOffset', String(offsetRef.current));
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [mounted, paused, speed]);
@@ -81,7 +96,10 @@ export default function TopRibbon({
   const onMouseLeave = () => { if (pauseOnHover) setPaused(false); };
 
   return (
-    <div className={`${bgColor} ${textColor} py-2 overflow-hidden relative`}>
+    <div
+      className={`${bgColor} ${textColor} py-2 overflow-hidden relative transition-all duration-300`}
+      style={{ maxHeight: isVisible ? 64 : 0, opacity: isVisible ? 1 : 0 }}
+    >
       <div className="flex items-center justify-center">
         {mounted && (
           <div
