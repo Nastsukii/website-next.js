@@ -153,8 +153,8 @@ As informações e serviços oferecidos neste site e durante as sessões terapê
 Para esclarecimentos sobre este aviso:
 
 **Vivieli Comiran**
-- E-mail: contato@vivielicomiran.com
-- Telefone: (45) 99999-9999
+- E-mail: vivielicomiran4@gmail.com
+- Telefone: (45) 99104-6124
 - Endereço: Rua Centro, 528 - Centro, Catanduvas - PR
 
 ---

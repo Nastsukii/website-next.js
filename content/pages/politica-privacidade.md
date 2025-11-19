@@ -2,8 +2,8 @@
 title: "Política de Privacidade"
 publishDate: "2025-01-01T00:00:00Z"
 description: "Política de privacidade e proteção de dados pessoais do site Vivieli Comiran"
-seoTitle: "Política de Privacidade - Vivieli Comiran"
-seoDescription: "Conheça nossa política de privacidade e como protegemos seus dados pessoais em conformidade com a LGPD."
+seoTitle: "Política de Privacidade - Viviéli Comiran"
+seoDescription: "Conheça nossa política de privacidade para atendimentos terapêuticos integrativos, em conformidade com a LGPD."
 showInMenu: true
 menuOrder: 1
 template: "default"
@@ -103,9 +103,9 @@ Podemos atualizar esta Política de Privacidade periodicamente. Notificaremos so
 
 Para questões relacionadas a esta Política de Privacidade ou para exercer seus direitos, entre em contato:
 
-**Vivieli Comiran**
-- E-mail: contato@vivielicomiran.com
-- Telefone: (45) 99999-9999
+- **Vivieli Comiran**
+- E-mail: vivielicomiran4@gmail.com
+- Telefone: (45) 99104-6124
 - Endereço: Rua Centro, 528 - Centro, Catanduvas - PR
 
 ### 11. Base Legal para o Tratamento

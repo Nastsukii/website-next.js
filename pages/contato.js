@@ -9,8 +9,8 @@ export default function Contato({ businessSettings, mainMenu }) {
       icon: FaWhatsapp,
       title: 'WhatsApp',
       description: 'Resposta rápida e agendamento fácil',
-      contact: '(45) 99999-9999',
-      link: 'https://wa.me/5545999999999',
+      contact: '(45) 99104-6124',
+      link: 'https://wa.me/5545991046124',
       color: 'text-green-500',
       bgColor: 'bg-green-100 dark:bg-green-900'
     },
@@ -18,8 +18,8 @@ export default function Contato({ businessSettings, mainMenu }) {
       icon: FaPhone,
       title: 'Telefone',
       description: 'Para conversas mais detalhadas',
-      contact: '(45) 99999-9999',
-      link: 'tel:+5545999999999',
+      contact: '(45) 99104-6124',
+      link: 'tel:+5545991046124',
       color: 'text-blue-500',
       bgColor: 'bg-blue-100 dark:bg-blue-900'
     },
@@ -27,8 +27,8 @@ export default function Contato({ businessSettings, mainMenu }) {
       icon: FaEnvelope,
       title: 'E-mail',
       description: 'Para dúvidas e informações',
-      contact: 'contato@vivielicomiran.com',
-      link: 'mailto:contato@vivielicomiran.com',
+      contact: 'vivielicomiran4@gmail.com',
+      link: 'mailto:vivielicomiran4@gmail.com',
       color: 'text-green-500',
       bgColor: 'bg-green-100 dark:bg-green-900'
     },
@@ -44,19 +44,19 @@ export default function Contato({ businessSettings, mainMenu }) {
   ];
 
   const workingHours = [
-    { day: 'Segunda-feira', hours: '8h às 18h' },
-    { day: 'Terça-feira', hours: '8h às 18h' },
-    { day: 'Quarta-feira', hours: '8h às 18h' },
-    { day: 'Quinta-feira', hours: '8h às 18h' },
-    { day: 'Sexta-feira', hours: '8h às 18h' },
-    { day: 'Sábado', hours: 'Mediante agendamento' },
+    { day: 'Segunda-feira', hours: '9h às 21h' },
+    { day: 'Terça-feira', hours: '9h às 21h' },
+    { day: 'Quarta-feira', hours: '9h às 21h' },
+    { day: 'Quinta-feira', hours: '9h às 21h' },
+    { day: 'Sexta-feira', hours: '9h às 21h' },
+    { day: 'Sábado', hours: 'Fechado' },
     { day: 'Domingo', hours: 'Fechado' }
   ];
 
   const faqs = [
     {
       question: 'Como agendar uma consulta?',
-      answer: 'Você pode agendar através do WhatsApp (45) 99999-9999, por telefone ou e-mail. Respondo em até 24 horas.'
+      answer: 'Você pode agendar através do WhatsApp (45) 99104-6124, por telefone ou e-mail. Respondo em até 24 horas.'
     },
     {
       question: 'Qual a diferença entre atendimento presencial e online?',
@@ -217,9 +217,9 @@ export default function Contato({ businessSettings, mainMenu }) {
         title="Pronto para Começar?"
         subtitle="Agende sua primeira consulta e dê o primeiro passo em direção ao seu bem-estar"
         ctaBtnText="Agendar Consulta"
-        ctaBtnLink="https://wa.me/5545999999999"
+        ctaBtnLink="https://wa.me/5545991046124"
         ctaContrastBtnText="Falar no WhatsApp"
-        ctaContrastBtnLink="https://wa.me/5545999999999"
+        ctaContrastBtnLink="https://wa.me/5545991046124"
         ctaContrastBtnPosition="center"
         vPadding="py-16"
       >

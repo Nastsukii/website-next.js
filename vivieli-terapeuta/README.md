@@ -205,7 +205,7 @@ npm start
 Para dúvidas ou suporte:
 
 - **E-mail**: contato@vivielicomiran.com
-- **WhatsApp**: (45) 99999-9999
+- **WhatsApp**: (45) 99104-6124
 - **Endereço**: Rua Centro, 528 - Centro, Catanduvas - PR
 
 ## 📄 Licença

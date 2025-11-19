@@ -113,6 +113,19 @@ Site profissional desenvolvido para Vivieli Comiran, terapeuta especializada em 
 5. **PostCard**: Card para exibição de posts
 6. **Layout**: Layout principal com SEO e meta tags
 
+## 🔧 Correções de Redirecionamento de Contato (WhatsApp)
+
+- Centralização do link: criado `lib/contact.js` com `WHATSAPP_LINK` e utilitários de normalização.
+- Validação automática nos CTAs: `components/ui/PageSection.js` agora normaliza links `wa.me` e aplica `target`/`rel` para externos.
+- Correção defensiva global: `components/layout/Layout.js` adiciona verificação em tempo de execução e normaliza anchors `wa.me` divergentes.
+- CTAs diretos: `pages/sobre.js` e `vivieli-terapeuta/pages/sobre.js` usam `WHATSAPP_LINK`.
+- Logs: quando um link é normalizado, um aviso é emitido no console com os valores original e normalizado.
+
+### Como validar
+- Navegue pelas páginas Início, Sobre, Serviços, Contato e Posts.
+- Em cada CTA “Agendar Consulta”, confirme que abre `https://wa.me/5545991046124`.
+- Realize hard reload e limpeza de cache; os links permanecem corretos.
+
 ### Containers
 1. **HeaderContainer**: Lógica de estado do header
 2. **PostsContainer**: Gerenciamento de posts com loading states

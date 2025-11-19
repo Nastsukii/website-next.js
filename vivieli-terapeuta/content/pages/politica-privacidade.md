@@ -103,9 +103,9 @@ Podemos atualizar esta Política de Privacidade periodicamente. Notificaremos so
 
 Para questões relacionadas a esta Política de Privacidade ou para exercer seus direitos, entre em contato:
 
-**Vivieli Comiran**
-- E-mail: contato@vivielicomiran.com
-- Telefone: (45) 99999-9999
+- **Vivieli Comiran**
+- E-mail: vivielicomiran4@gmail.com
+- Telefone: (45) 99104-6124
 - Endereço: Rua Centro, 528 - Centro, Catanduvas - PR
 
 ### 11. Base Legal para o Tratamento

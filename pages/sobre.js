@@ -53,7 +53,7 @@ export default function Sobre({ businessSettings, mainMenu }) {
   return (
     <Layout
       title="Sobre Mim"
-      description="Conheça a história e trajetória de Vivieli Comiran, terapeuta especializada em constelações familiares e desenvolvimento pessoal"
+      description="Conheça a jornada de Viviéli Comiran, Terapeuta Integrativa, e sua missão de unir ciência, espiritualidade, energia e emoção para cura e expansão."
       businessSettings={businessSettings}
       mainMenu={mainMenu}
     >
@@ -61,8 +61,8 @@ export default function Sobre({ businessSettings, mainMenu }) {
       <PageSection
         bgColor="bg-gradient-to-br from-green-50 to-green-100 dark:from-gray-900 dark:to-gray-800"
         vPadding="py-20"
-        title="Sobre Vivieli Comiran"
-        subtitle="Uma jornada dedicada ao bem-estar e desenvolvimento pessoal"
+        title="Sobre Viviéli Comiran"
+        subtitle="Sensibilidade humana, integração de saberes e missão de cura"
       >
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -74,23 +74,22 @@ export default function Sobre({ businessSettings, mainMenu }) {
               />
             </div>
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-                Minha História
-              </h3>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Minha História</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
-                Sou Vivieli Comiran, terapeuta especializada em Constelações Familiares, Psicoterapia Individual 
-                e Sessões de Autoconhecimento e Desenvolvimento Pessoal. Com mais de 5 anos de experiência 
-                na área, dedico minha vida a ajudar pessoas a encontrarem seu caminho para o bem-estar e crescimento pessoal.
+                Sou Viviéli Comiran, Terapeuta Integrativa. Minha missão é guiar pessoas em processos de cura,
+                consciência, liberdade emocional e expansão da alma, integrando Neurociência, Epigenética e
+                práticas terapêuticas.
               </p>
               <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
-                Formada em Recursos Humanos, sempre tive uma paixão por entender as dinâmicas humanas e ajudar 
-                pessoas a superarem seus desafios. Minha formação me permitiu integrar conhecimentos organizacionais 
-                com terapias holísticas, criando uma abordagem única e eficaz.
+                Formei-me em Gestão de Recursos Humanos e, ao ouvir um chamado interior, aprofundei-me em
+                Psicologia Transgenerativa, Hipnose Regressiva, PNL, Apometria Regressiva, Constelação
+                Transgenerativa, Reiki (Níveis 1 e 2), 7 Safiras e Comandos Quânticos, Inteligência Espiritual,
+                Reconstrução do Eu, Barras de Access e Creso Midas. Sou pós-graduada em Neurociência.
               </p>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                Atendo presencialmente em Catanduvas - PR, na Rua Centro, 528, Centro, e também ofereço 
-                atendimento online para pessoas de todo o Brasil. Meu objetivo é proporcionar um espaço 
-                seguro e acolhedor onde cada pessoa possa se desenvolver e encontrar sua melhor versão.
+                Atendo presencialmente em Catanduvas - PR e também online para todo o Brasil. Ofereço um
+                espaço seguro e acolhedor para que cada pessoa reconheça seus padrões, liberte o que não
+                faz parte de sua verdade e desperte sua força interior.
               </p>
             </div>
           </div>
@@ -100,7 +99,7 @@ export default function Sobre({ businessSettings, mainMenu }) {
       {/* Experience Timeline */}
       <PageSection
         title="Minha Jornada"
-        subtitle="Os marcos importantes da minha trajetória profissional"
+        subtitle="Marcos que consolidam uma missão de propósito e entrega"
         vPadding="py-16"
       >
         <div className="max-w-4xl mx-auto">
@@ -115,9 +114,7 @@ export default function Sobre({ businessSettings, mainMenu }) {
                   </div>
                 </div>
                 <div className="flex-grow">
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    {experience.title}
-                  </h3>
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">{experience.title}</h3>
                   <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                     {experience.description}
                   </p>
@@ -159,7 +156,7 @@ export default function Sobre({ businessSettings, mainMenu }) {
       {/* Education Section */}
       <PageSection
         title="Formação e Especializações"
-        subtitle="Minha base acadêmica e profissional"
+        subtitle="Pilares que sustentam minha prática integrativa"
         vPadding="py-16"
       >
         <div className="max-w-3xl mx-auto">
@@ -172,10 +169,18 @@ export default function Sobre({ businessSettings, mainMenu }) {
                 </h3>
               </div>
               <ul className="space-y-2 text-gray-600 dark:text-gray-300">
-                <li>• Graduação em Recursos Humanos</li>
-                <li>• Especialização em Terapias Holísticas</li>
-                <li>• Formação em Constelações Familiares</li>
-                <li>• Cursos em Psicoterapia Individual</li>
+                <li>• Gestão de Recursos Humanos</li>
+                <li>• Psicologia Transgenerativa</li>
+                <li>• Hipnose Regressiva e PNL</li>
+                <li>• Apometria Regressiva</li>
+                <li>• Constelação Transgenerativa</li>
+                <li>• Reiki Tradicional — Níveis 1 e 2</li>
+                <li>• 7 Safiras e Comandos Quânticos</li>
+                <li>• Inteligência Espiritual</li>
+                <li>• Reconstrução do Eu</li>
+                <li>• Barras de Access</li>
+                <li>• Creso Midas</li>
+                <li>• Pós-graduação em Neurociência</li>
               </ul>
             </div>
             
@@ -216,14 +221,14 @@ export default function Sobre({ businessSettings, mainMenu }) {
             <div className="bg-white bg-opacity-10 p-6 rounded-lg">
               <FaPhone className="text-3xl mx-auto mb-4" />
               <h4 className="font-semibold mb-2">Telefone</h4>
-              <p className="text-sm">(45) 99999-9999</p>
+              <p className="text-sm">(45) 99104-6124</p>
               <p className="text-sm">WhatsApp disponível</p>
             </div>
             
             <div className="bg-white bg-opacity-10 p-6 rounded-lg">
               <FaEnvelope className="text-3xl mx-auto mb-4" />
               <h4 className="font-semibold mb-2">E-mail</h4>
-              <p className="text-sm">contato@vivielicomiran.com</p>
+              <p className="text-sm">vivielicomiran4@gmail.com</p>
               <p className="text-sm">Resposta em até 24h</p>
             </div>
           </div>

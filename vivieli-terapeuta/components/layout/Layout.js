@@ -1,4 +1,6 @@
 import Head from 'next/head';
+import { useEffect } from 'react';
+import { normalizeWhatsAppHref } from '../../lib/contact';
 import Header from '../ui/Header';
 import Footer from '../ui/Footer';
 import TopRibbon from '../ui/TopRibbon';
@@ -22,10 +24,23 @@ export default function Layout({
   const pageKeywords = keywords || businessSettings.brandKeywords.join(', ');
 
   const ribbonMessages = [
-    '🌟 Agende sua consulta online ou presencial',
-    '💚 Atendimento especializado em Catanduvas - PR',
-    '📞 Entre em contato via WhatsApp: (45) 99999-9999'
+    '🌟 Atendimento Presencial e Online',
+    '💚 Catanduvas - PR',
+    '📞 WhatsApp: (45) 99104-6124'
   ];
+
+  useEffect(() => {
+    if (typeof document === 'undefined') return
+    const anchors = document.querySelectorAll('a[href*="wa.me"]')
+    anchors.forEach((a) => {
+      const href = a.getAttribute('href') || ''
+      const normalized = normalizeWhatsAppHref(href)
+      if (normalized && normalized !== href) {
+        console.warn('[contact] whatsapp href normalized', { original: href, normalized })
+        a.setAttribute('href', normalized)
+      }
+    })
+  }, [])
 
   return (
     <>

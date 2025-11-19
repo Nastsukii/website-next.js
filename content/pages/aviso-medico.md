@@ -24,10 +24,11 @@ As informações e serviços oferecidos neste site e durante as sessões terapê
 - **Não prescrevemos medicamentos** ou tratamentos médicos
 
 #### 1.2 O que oferecemos:
-- **Constelações Familiares** como ferramenta de autoconhecimento e desenvolvimento pessoal
-- **Psicoterapia Individual** focada em desenvolvimento pessoal e bem-estar
-- **Sessões de Autoconhecimento** para crescimento pessoal
-- **Desenvolvimento Pessoal** através de técnicas terapêuticas holísticas
+- **Constelação Transgenerativa** como ferramenta de autoconhecimento e cura transgeracional
+- **Psicologia Transgenerativa & PNL** integrando Neurociência e ressignificação de crenças
+- **Reconstrução do Eu** para alinhamento de identidade, propósito e valores
+- **Inteligência Espiritual** para expansão de consciência e escolhas alinhadas
+- **Reiki Tradicional (Níveis 1 e 2)** e práticas energéticas (7 Safiras, Comandos Quânticos)
 - **Orientação e apoio** emocional e pessoal
 
 ### 2. Limitações dos Serviços
@@ -152,9 +153,9 @@ As informações e serviços oferecidos neste site e durante as sessões terapê
 
 Para esclarecimentos sobre este aviso:
 
-**Vivieli Comiran**
-- E-mail: contato@vivielicomiran.com
-- Telefone: (45) 99999-9999
+- **Vivieli Comiran**
+- E-mail: vivielicomiran4@gmail.com
+- Telefone: (45) 99104-6124
 - Endereço: Rua Centro, 528 - Centro, Catanduvas - PR
 
 ---

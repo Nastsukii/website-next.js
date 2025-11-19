@@ -6,96 +6,48 @@ import { getMainMenu, getBusinessSettings } from '../lib/settings';
 export default function Servicos({ businessSettings, mainMenu }) {
   const services = [
     {
-      id: 'constelacoes',
+      id: 'constelacao-transgenerativa',
       icon: FaUsers,
-      title: 'Constelações Familiares',
-      description: 'Trabalho com constelações familiares para identificar e resolver padrões familiares que afetam sua vida atual.',
-      duration: '1h30min',
-      price: 'R$ 150',
+      title: 'Constelação Transgenerativa',
+      description: 'Explora padrões familiares e memórias ancestrais para liberação de bloqueios e reconexão com a origem.',
+      duration: '60–90min',
+      price: 'Sob consulta',
       modality: 'Presencial/Online',
-      features: [
-        'Identificação de padrões familiares',
-        'Resolução de conflitos transgeracionais',
-        'Cura de relacionamentos familiares',
-        'Liberação de bloqueios emocionais',
-        'Reconexão com a ancestralidade'
-      ],
-      benefits: [
-        'Maior compreensão da dinâmica familiar',
-        'Resolução de conflitos antigos',
-        'Melhoria nos relacionamentos',
-        'Cura emocional profunda',
-        'Paz interior e equilíbrio'
-      ]
+      features: ['Padrões familiares', 'Cura transgeracional', 'Reconexão ancestral'],
+      benefits: ['Compreensão de dinâmicas familiares', 'Liberação de bloqueios', 'Equilíbrio emocional']
     },
     {
-      id: 'psicoterapia',
+      id: 'psicologia-pnl',
       icon: FaBrain,
-      title: 'Psicoterapia Individual',
-      description: 'Atendimento psicológico individualizado para trabalhar questões pessoais e promover o bem-estar mental.',
-      duration: '50min',
-      price: 'R$ 120',
+      title: 'Psicologia Transgenerativa & PNL',
+      description: 'Integra Neurociência e Programação Neurolinguística para ressignificar mapas mentais e ampliar possibilidades.',
+      duration: '50–60min',
+      price: 'Sob consulta',
       modality: 'Presencial/Online',
-      features: [
-        'Avaliação psicológica inicial',
-        'Trabalho com ansiedade e depressão',
-        'Processamento de traumas',
-        'Desenvolvimento de habilidades sociais',
-        'Técnicas de relaxamento e mindfulness'
-      ],
-      benefits: [
-        'Redução de sintomas de ansiedade',
-        'Melhoria do humor e bem-estar',
-        'Maior autoconfiança',
-        'Desenvolvimento de estratégias de coping',
-        'Crescimento pessoal significativo'
-      ]
+      features: ['Ressignificação de crenças', 'Estratégias pessoais', 'Ferramentas de Neurociência'],
+      benefits: ['Maior clareza mental', 'Ampliação de possibilidades', 'Autonomia emocional']
     },
     {
-      id: 'autoconhecimento',
+      id: 'reconstrucao-eu',
       icon: FaHeart,
-      title: 'Sessões de Autoconhecimento',
-      description: 'Sessões focadas no autoconhecimento para você se conhecer melhor e desenvolver sua inteligência emocional.',
-      duration: '1h',
-      price: 'R$ 100',
+      title: 'Reconstrução do Eu',
+      description: 'Processo de ressignificação profunda da identidade, alinhando propósito, valores e força interior.',
+      duration: '60–90min',
+      price: 'Sob consulta',
       modality: 'Presencial/Online',
-      features: [
-        'Mapeamento de personalidade',
-        'Desenvolvimento da inteligência emocional',
-        'Identificação de valores e crenças',
-        'Trabalho com autoestima',
-        'Descoberta do propósito de vida'
-      ],
-      benefits: [
-        'Maior autoconhecimento',
-        'Melhoria da autoestima',
-        'Clareza sobre objetivos de vida',
-        'Melhor relacionamento consigo mesmo',
-        'Desenvolvimento da inteligência emocional'
-      ]
+      features: ['Alinhamento de propósito', 'Autoestima e identidade', 'Ferramentas de integração'],
+      benefits: ['Fortalecimento do Eu', 'Coerência interna', 'Direcionamento de vida']
     },
     {
-      id: 'desenvolvimento',
+      id: 'inteligencia-espiritual',
       icon: FaLeaf,
-      title: 'Desenvolvimento Pessoal',
-      description: 'Programas de desenvolvimento pessoal para potencializar suas habilidades e alcançar seus objetivos.',
-      duration: '1h',
-      price: 'R$ 100',
+      title: 'Inteligência Espiritual',
+      description: 'Desenvolvimento humano com consciência ampliada e alinhamento de escolhas com a verdade pessoal.',
+      duration: '60min',
+      price: 'Sob consulta',
       modality: 'Presencial/Online',
-      features: [
-        'Definição de metas e objetivos',
-        'Desenvolvimento de habilidades sociais',
-        'Trabalho com comunicação assertiva',
-        'Gestão de tempo e produtividade',
-        'Planejamento de carreira e vida'
-      ],
-      benefits: [
-        'Alcance de objetivos pessoais',
-        'Melhoria nas habilidades sociais',
-        'Maior produtividade',
-        'Comunicação mais eficaz',
-        'Crescimento profissional e pessoal'
-      ]
+      features: ['Consciência ampliada', 'Alinhamento de escolhas', 'Expansão pessoal'],
+      benefits: ['Mais presença e sentido', 'Decisões alinhadas', 'Expansão da consciência']
     }
   ];
 
@@ -156,7 +108,7 @@ export default function Servicos({ businessSettings, mainMenu }) {
         bgColor="bg-gradient-to-br from-green-50 to-green-100 dark:from-gray-900 dark:to-gray-800"
         vPadding="py-20"
         title="Meus Serviços"
-        subtitle="Modalidades de atendimento para diferentes necessidades e objetivos"
+        subtitle="Abordagens integrativas para diferentes necessidades e objetivos"
       >
         <div className="text-center">
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8">
@@ -173,7 +125,7 @@ export default function Servicos({ businessSettings, mainMenu }) {
             <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md">
               <FaClock className="text-green-600 dark:text-green-400 text-2xl mx-auto mb-2" />
               <h4 className="font-semibold text-gray-900 dark:text-white mb-1">Horários</h4>
-              <p className="text-sm text-gray-600 dark:text-gray-300">Seg-Sex: 8h-18h</p>
+              <p className="text-sm text-gray-600 dark:text-gray-300">Seg-Sex: 9h-21h</p>
             </div>
             <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md">
               <FaCheckCircle className="text-green-600 dark:text-green-400 text-2xl mx-auto mb-2" />
@@ -301,7 +253,7 @@ export default function Servicos({ businessSettings, mainMenu }) {
                 </ul>
                 
                 <a
-                  href="https://wa.me/5545999999999"
+                  href="https://wa.me/5545991046124"
                   className={`w-full block text-center py-3 px-4 rounded-md font-medium transition-colors duration-200 ${
                     index === 1
                       ? 'bg-green-600 text-white hover:bg-green-700'

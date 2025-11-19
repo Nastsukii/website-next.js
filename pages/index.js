@@ -27,27 +27,63 @@ export default function Home({ featuredPosts, businessSettings, mainMenu }) {
   const services = [
     {
       icon: FaUsers,
-      title: "Constelações Familiares",
-      description: "Trabalho com constelações familiares para identificar e resolver padrões familiares que afetam sua vida atual.",
-      features: ["Identificação de padrões", "Resolução de conflitos", "Cura transgeracional"]
+      title: "Constelação Transgenerativa",
+      description: "Explora padrões familiares e memórias ancestrais para liberação de bloqueios e reconexão com a origem.",
+      features: ["Padrões familiares", "Cura transgeracional", "Reconexão ancestral"]
     },
     {
       icon: FaBrain,
-      title: "Psicoterapia Individual",
-      description: "Atendimento psicológico individualizado para trabalhar questões pessoais e promover o bem-estar mental.",
-      features: ["Ansiedade e depressão", "Traumas", "Desenvolvimento pessoal"]
+      title: "Psicologia Transgenerativa & PNL",
+      description: "Integra Neurociência e Programação Neurolinguística para ressignificar mapas mentais e ampliar possibilidades.",
+      features: ["Ressignificação", "Neurociência", "Estratégias pessoais"]
     },
     {
       icon: FaHeart,
-      title: "Autoconhecimento",
-      description: "Sessões focadas no autoconhecimento para você se conhecer melhor e desenvolver sua inteligência emocional.",
-      features: ["Inteligência emocional", "Autoestima", "Propósito de vida"]
+      title: "Reconstrução do Eu",
+      description: "Processo de ressignificação profunda da identidade, alinhando propósito, valores e força interior.",
+      features: ["Identidade", "Propósito", "Autoestima"]
     },
     {
       icon: FaLeaf,
-      title: "Desenvolvimento Pessoal",
-      description: "Programas de desenvolvimento pessoal para potencializar suas habilidades e alcançar seus objetivos.",
-      features: ["Metas e objetivos", "Habilidades sociais", "Crescimento pessoal"]
+      title: "Inteligência Espiritual",
+      description: "Desenvolvimento humano através da consciência ampliada e alinhamento de escolhas com a verdade pessoal.",
+      features: ["Consciência", "Alinhamento", "Expansão"]
+    },
+    {
+      icon: FaBrain,
+      title: "Hipnose Regressiva",
+      description: "Acesso a memórias e ressignificação de experiências para cura emocional e expansão de consciência.",
+      features: ["Ressignificação", "Acesso a memórias", "Cura emocional"]
+    },
+    {
+      icon: FaHeart,
+      title: "Reiki Tradicional (Níveis 1 e 2)",
+      description: "Harmonização energética e equilíbrio dos centros de energia para bem-estar integral.",
+      features: ["Harmonização", "Equilíbrio energético", "Bem-estar"]
+    },
+    {
+      icon: FaUsers,
+      title: "Apometria Regressiva",
+      description: "Trabalho com múltiplos níveis de consciência para limpeza energética e realinhamento.",
+      features: ["Limpeza", "Realinhamento", "Consciência"]
+    },
+    {
+      icon: FaLeaf,
+      title: "Barras de Access",
+      description: "Desbloqueios mentais e emocionais para ampliar possibilidades e leveza no dia a dia.",
+      features: ["Desbloqueio", "Leveza", "Possibilidades"]
+    },
+    {
+      icon: FaStar,
+      title: "Creso Midas",
+      description: "Alinhamento energético focado em prosperidade e merecimento.",
+      features: ["Prosperidade", "Merecimento", "Alinhamento"]
+    },
+    {
+      icon: FaStar,
+      title: "7 Safiras e Comandos Quânticos",
+      description: "Protocolos energéticos para limpeza, alinhamento e ativação de potenciais.",
+      features: ["Limpeza", "Alinhamento", "Ativação"]
     }
   ];
 
@@ -63,9 +99,9 @@ export default function Home({ featuredPosts, businessSettings, mainMenu }) {
         bgColor="bg-gradient-to-br from-green-50 to-green-100 dark:from-gray-900 dark:to-gray-800"
         vPadding="py-20"
         title="Vivieli Comiran"
-        subtitle="Terapeuta especializada em Constelações Familiares, Psicoterapia Individual e Sessões de Autoconhecimento e Desenvolvimento Pessoal"
+        subtitle="Terapeuta Integrativa — união de ciência, espiritualidade, energia e emoção para cura e expansão"
         ctaBtnText="Agendar Consulta"
-        ctaBtnLink="https://wa.me/5545999999999"
+        ctaBtnLink="https://wa.me/5545991046124"
         ctaContrastBtnText="Conhecer Serviços"
         ctaContrastBtnLink="/servicos"
         ctaContrastBtnPosition="right"
@@ -78,8 +114,9 @@ export default function Home({ featuredPosts, businessSettings, mainMenu }) {
               className="w-32 h-32 rounded-full mx-auto mb-6 object-cover shadow-lg"
             />
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Com mais de 5 anos de experiência na área, ofereço atendimento presencial em Catanduvas - PR 
-              e online para todo o Brasil. Formada em Recursos Humanos com especializações em terapias holísticas.
+              Atendo presencialmente em Catanduvas - PR e online para todo o Brasil. Minha missão é guiar pessoas
+              em processos de cura, consciência, liberdade emocional e expansão da alma, integrando Neurociência,
+              Epigenética e práticas terapêuticas.
             </p>
           </div>
           
@@ -194,9 +231,9 @@ export default function Home({ featuredPosts, businessSettings, mainMenu }) {
         title="Pronto para Transformar Sua Vida?"
         subtitle="Agende sua consulta e dê o primeiro passo em direção ao seu bem-estar e desenvolvimento pessoal"
         ctaBtnText="Agendar Consulta"
-        ctaBtnLink="https://wa.me/5545999999999"
+        ctaBtnLink="https://wa.me/5545991046124"
         ctaContrastBtnText="Falar no WhatsApp"
-        ctaContrastBtnLink="https://wa.me/5545999999999"
+        ctaContrastBtnLink="https://wa.me/5545991046124"
         ctaContrastBtnPosition="center"
         vPadding="py-16"
       >

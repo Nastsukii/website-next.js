@@ -10,8 +10,8 @@ export default function Footer({
   menuColumns = [],
   showNewsletter = false,
   address = 'Rua Centro, 528 - Centro, Catanduvas - PR',
-  phone = '+55 (45) 99999-9999',
-  email = 'contato@vivielicomiran.com',
+  phone = '+55 (45) 99104-6124',
+  email = 'vivielicomiran4@gmail.com',
 }) {
   const defaultMenuColumns = [
     {
@@ -36,19 +36,19 @@ export default function Footer({
     {
       title: 'Contato',
       links: [
-        { label: 'WhatsApp', href: 'https://wa.me/5545999999999' },
+        { label: 'WhatsApp', href: 'https://wa.me/5545991046124' },
         { label: 'Instagram', href: 'https://www.instagram.com/vivielicomiran/' },
-        { label: 'E-mail', href: 'mailto:contato@vivielicomiran.com' },
-        { label: 'Telefone', href: 'tel:+5545999999999' },
+        { label: 'E-mail', href: 'mailto:vivielicomiran4@gmail.com' },
+        { label: 'Telefone', href: 'tel:+5545991046124' },
       ]
     }
   ];
 
   const defaultSocialLinks = [
-    { href: 'https://wa.me/5545999999999', icon: FaWhatsapp, label: 'WhatsApp' },
+    { href: 'https://wa.me/5545991046124', icon: FaWhatsapp, label: 'WhatsApp' },
     { href: 'https://www.instagram.com/vivielicomiran/', icon: FaInstagram, label: 'Instagram' },
-    { href: 'mailto:contato@vivielicomiran.com', icon: FaEnvelope, label: 'E-mail' },
-    { href: 'tel:+5545999999999', icon: FaPhone, label: 'Telefone' },
+    { href: 'mailto:vivielicomiran4@gmail.com', icon: FaEnvelope, label: 'E-mail' },
+    { href: 'tel:+5545991046124', icon: FaPhone, label: 'Telefone' },
   ];
 
   const menuData = menuColumns.length > 0 ? menuColumns : defaultMenuColumns;
@@ -59,8 +59,8 @@ export default function Footer({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
-          <div className="lg:col-span-1">
-            <div className="flex items-center mb-4">
+          <div className="lg:col-span-1 flex flex-col items-center text-center">
+            <div className="flex items-center justify-center mb-4">
               {logomark ? (
                 <img
                   src={logomark}
@@ -77,15 +77,15 @@ export default function Footer({
               {description}
             </p>
             <div className="space-y-2 text-sm text-gray-300">
-              <div className="flex items-center">
+              <div className="flex items-center justify-center">
                 <FaMapMarkerAlt className="h-4 w-4 mr-2 text-green-400" />
                 {address}
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center justify-center">
                 <FaPhone className="h-4 w-4 mr-2 text-green-400" />
                 {phone}
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center justify-center">
                 <FaEnvelope className="h-4 w-4 mr-2 text-green-400" />
                 {email}
               </div>
@@ -94,7 +94,7 @@ export default function Footer({
 
           {/* Menu Columns */}
           {menuData.map((column, index) => (
-            <div key={index}>
+            <div key={index} className="text-center">
               <h3 className="text-lg font-semibold mb-4 text-green-400">
                 {column.title}
               </h3>
@@ -103,7 +103,7 @@ export default function Footer({
                   <li key={linkIndex}>
                     <Link
                       href={link.href}
-                      className="text-gray-300 hover:text-green-400 transition-colors duration-200 text-sm"
+                      className="text-gray-300 hover:text-green-400 transition-colors duration-200 text-sm inline-block text-center"
                     >
                       {link.label}
                     </Link>
@@ -116,8 +116,8 @@ export default function Footer({
 
         {/* Social Links */}
         <div className="border-t border-gray-700 mt-8 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="flex space-x-4 mb-4 md:mb-0">
+          <div className="flex flex-col md:flex-row justify-center items-center">
+            <div className="flex space-x-4 mb-4 md:mb-0 justify-center">
               {socialData.map((social, index) => {
                 const IconComponent = social.icon;
                 return (
@@ -132,7 +132,7 @@ export default function Footer({
                 );
               })}
             </div>
-            <p className="text-gray-400 text-sm">
+            <p className="text-gray-400 text-sm text-center">
               {copyright}
             </p>
           </div>

@@ -1,4 +1,5 @@
 import { cn } from '../../lib/utils';
+import { normalizeWhatsAppHref, isExternalHref } from '../../lib/contact';
 
 export default function PageSection({
   isBoxed = true,
@@ -95,16 +96,36 @@ export default function PageSection({
             gap
           )}>
             {ctaBtnText && (
+              (() => {
+                const normalized = normalizeWhatsAppHref(ctaBtnLink)
+                if (ctaBtnLink && normalized !== ctaBtnLink) {
+                  console.warn('[contact] whatsapp href normalized', { original: ctaBtnLink, normalized })
+                }
+                const external = isExternalHref(normalized)
+                return (
               <a
-                href={ctaBtnLink}
+                href={normalized}
+                target={external ? '_blank' : undefined}
+                rel={external ? 'noopener noreferrer' : undefined}
                 className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 transition-colors duration-200"
               >
                 {ctaBtnText}
               </a>
+                )
+              })()
             )}
             {ctaContrastBtnText && (
+              (() => {
+                const normalized = normalizeWhatsAppHref(ctaContrastBtnLink)
+                if (ctaContrastBtnLink && normalized !== ctaContrastBtnLink) {
+                  console.warn('[contact] whatsapp href normalized', { original: ctaContrastBtnLink, normalized })
+                }
+                const external = isExternalHref(normalized)
+                return (
               <a
-                href={ctaContrastBtnLink}
+                href={normalized}
+                target={external ? '_blank' : undefined}
+                rel={external ? 'noopener noreferrer' : undefined}
                 className={cn(
                   'inline-flex items-center px-8 py-3 text-base font-medium rounded-md transition-colors duration-200',
                   /* Se a seção tem fundo verde sólido, use contraste branco */
@@ -115,6 +136,8 @@ export default function PageSection({
               >
                 {ctaContrastBtnText}
               </a>
+                )
+              })()
             )}
           </div>
         )}

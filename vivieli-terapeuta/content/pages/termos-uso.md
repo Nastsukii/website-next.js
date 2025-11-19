@@ -172,9 +172,9 @@ Podemos suspender seus serviços em caso de:
 
 Para questões relacionadas a estes Termos de Uso:
 
-**Vivieli Comiran**
-- E-mail: contato@vivielicomiran.com
-- Telefone: (45) 99999-9999
+- **Vivieli Comiran**
+- E-mail: vivielicomiran4@gmail.com
+- Telefone: (45) 99104-6124
 - Endereço: Rua Centro, 528 - Centro, Catanduvas - PR
 
 ### 15. Aviso Importante

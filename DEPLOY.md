@@ -256,7 +256,7 @@ npm run build
 
 ### Contatos Técnicos:
 - **E-mail**: contato@vivielicomiran.com
-- **WhatsApp**: (45) 99999-9999
+- **WhatsApp**: (45) 99104-6124
 
 ### Documentação:
 - **README.md**: Instruções completas
